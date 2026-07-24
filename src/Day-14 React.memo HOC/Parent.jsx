@@ -27,7 +27,7 @@ const Parent = () => {
         <h3>Count: {count}</h3>
         <button
           style={{ marginTop: "20px" }}
-          onClick={() => setCount(count + 1)}
+          onClick={() => setCount(count+1)}
         >
           Add
         </button>
