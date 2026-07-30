@@ -27,10 +27,11 @@
 
 // import RouteLayout from "./Layout/RouteLayout";
 import { RouterProvider } from "react-router-dom";
-import router from "./Routes/Route";
+import Router from "./Day-15 Routing/Routes/Router";
+
 
 const App = () => {
-  return <RouterProvider router = {router}/>;
+  return <RouterProvider router = {Router}/>;
 };
 
 export default App;
