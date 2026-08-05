@@ -3,19 +3,22 @@ import { Form, Link } from "react-router-dom";
 import { useState } from "react";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 import Signup from './Signup';
+import Header from "../Components/Header";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <>
+    <Header/>
+    <div className="w-full h-[80vh] flex justify-center items-center">
       <form
         action=""
         className=" max-w-120  w-full space-y-9 bg-white border-2  border-gray-300 p-8 rounded-xl  "
       >
         <div>
-          <h2 className="text-xl text-purple-500 font-semibold text-center">
+          <h2 className="text-xl text-black  font-semibold text-center">
             Login
           </h2>
           <p className="text-center text-gray-500 text-sm font-medium ">
@@ -71,7 +74,7 @@ const Login = () => {
         <div className="mt-5">
           <button
             type="submit"
-            className="w-full p-2.5 bg-purple-600 font-semibold rounded-md text-while tracking-wide mb-3 hover:bg-purple-700 hover:cursor-pointer"
+            className="w-full p-2.5 bg-black text-white tracking-wider font-semibold rounded-md text-while  mb-3  hover:cursor-pointer"
           >
             Login
           </button>
@@ -87,6 +90,7 @@ const Login = () => {
         </div>
       </form>
     </div>
+    </>
   );
 };
 

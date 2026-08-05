@@ -2,6 +2,7 @@ import React from "react";
 import { Form, Link } from "react-router-dom";
 import { useState } from "react";
 import {FaRegEye , FaRegEyeSlash} from "react-icons/fa";
+import Header from "../Components/Header";
 
 const Signup = () => {
   const [fullname, setFullname] = useState("");
@@ -9,13 +10,15 @@ const Signup = () => {
   const [password, setPassword] = useState("");
   console.log(fullname);
   return (
-    <div className="w-full h-screen flex justify-center items-center">
+    <>
+    <Header/>
+    <div className="w-full h-[80vh] flex justify-center items-center">
       <form
         action=""
         className=" max-w-120 w-full space-y-9 bg-white border-2  border-gray-300 p-8 rounded-xl m-5"
       >
         <div>
-          <h2 className="text-xl text-purple-500 font-semibold text-center">
+          <h2 className="text-xl text-black font-semibold text-center">
             SignUp
           </h2>
           <p className="text-center text-gray-500 text-sm font-medium ">
@@ -75,7 +78,7 @@ const Signup = () => {
         <div>
           <button
             type="submit"
-            className="w-full p-2.5 bg-purple-600 font-semibold rounded-md text-while tracking-wide mb-3 hover:bg-purple-700 hover:cursor-pointer"
+            className="w-full p-2.5 bg-black font-semibold rounded-md text-white tracking-wide mb-3  hover:cursor-pointer"
           >
             Signup
           </button>
@@ -91,6 +94,7 @@ const Signup = () => {
         </div>
       </form>
     </div>
+    </>
   );
 };
 
